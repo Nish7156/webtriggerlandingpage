@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+// utils scss files
+@import "utils/variables";
+// layout scss files
+@import "layout/footer";
+@import "layout/header";
+@import "layout/nav";
+
+// components scss files
+@import "components/animation";
+// @import "components/breadcrumb";
+@import "components/button";
+@import "components/chatting";
+@import "components/custom-cursor";
+@import "components/form";
+@import "components/pagination";
+@import "components/ratio";
+@import "components/slider";
+@import "components/tabs";
+@import "components/tap-top";
+@import "components/title";
+
+@import "pages/home";
+
+
+
+.navbar-nav{
+  flex-direction: row;
+}
