@@ -4,7 +4,7 @@ import "@/styles/bootstrap.css";
 import "@/styles/iconsax.css";
 import "@/styles/remixicon.css";
 import "@/styles/aos.css";
-import '@fortawesome/fontawesome-free/css/all.css';
+import "@fortawesome/fontawesome-free/css/all.css";
 import type { AppProps } from "next/app";
 import Script from "next/script";
 
@@ -21,13 +21,10 @@ export default function App({ Component, pageProps }: AppProps) {
         src="../assets/js/swiper-bundle.min.js"
         crossOrigin="anonymous"
       ></Script>
-       <Script
-        src="../assets/js/aos.js"
-        crossOrigin="anonymous"
-      ></Script>
-      <Script src="../assets/js/custom-aos.js"/>
-      <Script src="../assets/js/bootstrap.bundle.min.js"/>
-      <Script src="../assets/js/script.js"/>
+      <Script src="../assets/js/aos.js" crossOrigin="anonymous"></Script>
+      <Script src="../assets/js/custom-aos.js" />
+      <Script src="../assets/js/bootstrap.bundle.min.js" />
+      <Script src="../assets/js/script.js" />
 
       <Component {...pageProps} />
     </>

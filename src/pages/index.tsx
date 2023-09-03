@@ -12,6 +12,7 @@ import Iamge5 from "@/assets/images/home/finger.png";
 import Iamge6 from "@/assets/images/home/laptop.png";
 import { useEffect } from "react";
 import SecondSection from "@/components/SecondSection";
+import AboutSection from "@/components/Pages/Home/AboutSection";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -82,24 +83,23 @@ export default function Home() {
       });
     });
 
-    const tapTopBtn = document.querySelector(".tap-to-top-button")
-const tapTopTopBox = document.querySelector(".tap-to-top-box")
-tapTopBtn?.addEventListener("click", function () {
-    window.scroll({
+    const tapTopBtn = document.querySelector(".tap-to-top-button");
+    const tapTopTopBox = document.querySelector(".tap-to-top-box");
+    tapTopBtn?.addEventListener("click", function () {
+      window.scroll({
         top: 0,
-        behavior: 'smooth'
+        behavior: "smooth",
+      });
     });
-})
-if (tapTopTopBox) {
-    window.onscroll = function () {
+    if (tapTopTopBox) {
+      window.onscroll = function () {
         if (pageYOffset >= 1000) {
-            tapTopTopBox.classList.remove("hide")
+          tapTopTopBox.classList.remove("hide");
         } else {
-            tapTopTopBox.classList.add("hide")
+          tapTopTopBox.classList.add("hide");
         }
+      };
     }
-}
-
   }, []);
   return (
     <>
@@ -208,11 +208,12 @@ if (tapTopTopBox) {
         </div>
       </section>
       <SecondSection />
+      <AboutSection/>
       <div className="tap-to-top-box hide">
-      <button className="tap-to-top-button">
-        <i className="iconsax" data-icon="chevron-up"></i>
-      </button>
-    </div>
+        <button className="tap-to-top-button">
+          <i className="iconsax" data-icon="chevron-up"></i>
+        </button>
+      </div>
     </>
   );
 }

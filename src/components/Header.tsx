@@ -28,9 +28,7 @@ function Header() {
           data-bs-target="#primaryMenu"
         >
           <span className="navbar-toggler-icon">
-            <i className="iconsax" data-icon="text-align-justify">
-              hhhh
-            </i>
+            <i className="iconsax" data-icon="text-align-justify"></i>
           </span>
         </button>
         <a href="index.html">

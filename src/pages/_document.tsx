@@ -52,7 +52,6 @@ export default function Document() {
         <div id="cursor-border"></div>
 
         <NextScript />
-
       </body>
     </Html>
   );
