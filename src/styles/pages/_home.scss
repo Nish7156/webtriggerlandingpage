@@ -6,6 +6,7 @@
   text-align: center;
   padding: calc(100px + (190 - 100) * ((100vw - 320px) / (1920 - 320))) 0
     calc(40px + (60 - 40) * ((100vw - 320px) / (1920 - 320)));
+    background-image: url(../../assets/images/home/home-bg.png);
   position: relative;
   background-size: cover;
   z-index: 1;
